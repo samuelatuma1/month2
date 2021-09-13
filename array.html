@@ -9,13 +9,93 @@
 <body>
     <script>
         print = console.log
-        number = 1
-        while(number <= 10){
-            print(number)
-            number += 1
+        // let number = 1
+        // // while(number <= 10){
+        // //     print(number)
+        // //     number += 1
+        // // }
 
-        }
-    
+        // // for loop allows initialization, condition, condition modification all in one bracket
+        // for(let number = 1; number <= 10; number += 1){
+        //     console.log(number)
+        // }
+        // str = 'sdds' 
+        // while(str){
+        //     alert('hi')
+        //     str=''
+        // }
+
+
+        // Array(List)
+        //initialization
+            //list = new Array()
+            john = 'boy'
+            var list = [10, 'hello', 9, john, 'bpp']
+            // alert(typeof list)
+              
+            // alert(list[3])
+            list[2] = 'modified'
+            list[2000] = 'long heh'
+            // console.log(list)
+
+            // console.log(list)
+            // list.length = 20
+            // alert(list.length)
+
+        // array Methods
+            // add items to an array
+            list = [1, 2, 3, 4, 5]
+            //add to the end
+            list.push('added')
+            
+
+            //add to the beginning
+            list.unshift('newly added')
+            // print(list)
+
+            // Add at a particular index
+            list.splice(2, 0, 'replaced')
+           // alert(list)
+
+        // Removing
+            // from the end
+            list.pop()
+            //alert(list)
+            //from the beginning
+            list.shift()
+            // alert(list)
+            // from any index
+            list.splice(2, 1)
+            // alert(list)
+
+        // Other array methods
+            let newList = [10, 9, 8, 6, 2, 11]
+            //check if included in array
+                //alert(newList.includes(12))
+            // check index of an item
+            //alert(newList.indexOf(9))
+
+            //slicing: Returns a portion of the array
+            let shorter = newList.slice(1, 4)
+            // alert(shorter)
+            // reverse reverses a list
+            // alert(newList.reverse())
+            
+        // Looping through an array
+        newArr = ['one', 'two', 'three']
+
+        // for(let index = 0; index < newArr.length; index++){
+        //     alert(newArr[index])
+        // }
+        // Simpler way to loop through an array
+            //for of loop
+            for(let word of newArr){
+                alert(word)
+            }
+
+        //Objects
+
+        //Set, Map
     </script>
 </body>
 </html>
