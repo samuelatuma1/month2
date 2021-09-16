@@ -89,11 +89,66 @@
         // }
         // Simpler way to loop through an array
             //for of loop
-            for(let word of newArr){
-                alert(word)
-            }
+            // for(word of newArr){
+            //     alert(word)
+            // }
+
+            // Converting an array to a string
+          
+            // alert(newarr)
+            
+            let str = 'Solomon Grundy Born On Monday'
+            let newlist = str.split(' ')
+            //alert(newlist)
 
         //Objects
+        // Objects hold information like a dictionary
+        //keys, values
+        // let me = {}
+        // me = new Object()
+        let me = {
+            0: 'Try',
+            'name': 'Samuel Atuma',
+            'age': 10,
+            'friends': ['Ubong', 'Ut', 'Ben', 'Sifon'],
+            'more': {'likes': 'football'}
+        }
+        console.log(me)
+        // alert(me.hasOwnProperty('enemies'))
+
+        // Accessing data in our object
+            //dot notation
+                // alert(me.friends[2])
+                // console.log(me[0])
+            // box notation
+            //alert(me["friends"][2])
+             me = {
+            0: 'Try',
+            'name': 'Samuel Atuma',
+            'age': 10,
+            'friends': ['Ubong', 'Ut', 'Ben', 'Sifon'],
+            'more': {'likes': 'football'}
+        }
+            // modifying data
+            // me[0] = 'Ubong Gibson'
+            // console.log(me)
+            me['friends'][1] = 'Something else'
+            //console.log(me)
+            
+        // adding data
+        me['favorite food'] = 'Beans'
+        console.log(me)
+        // deleting
+        delete me['more']
+
+        // Looping through objects
+            // use the for in loop
+            aboutMe = {name: 'Samuel', age: 15}
+            for(key in aboutMe){
+                alert(aboutMe[key])
+            }
+        console.log(me)
+
 
         //Set, Map
     </script>

@@ -1,0 +1,46 @@
+@mixin flexStuff(){
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+@media screen and (min-width: 900px){
+    .container{
+        display: grid;
+        grid-template-columns: 100px 85%;
+        align-items: start;
+
+        nav{
+            min-height: 98vh;
+            position: sticky;
+            top: 0;
+            // @include flexStuff();
+            .homediv{
+                display: block;
+                margin: 2px;
+            }
+            .secondNav{
+            @include flexStuff();
+            
+                
+            }
+            a{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    .categories{
+        @include flexStuff();
+        justify-content: space-evenly;
+        width: 99%;
+        .category{
+            max-width: 30%;
+            margin: 20px;
+            margin-top: 10px;
+            &:hover{
+                max-width: 33%;
+                background-color: rgb(250, 247, 247);
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+$body: rgb(240, 239, 239);
+@mixin flexStyle(){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+body{
+    margin: 0;
+    font-family: cursive;
+    background-color: $body;
+}
+.container{
+    .categories{
+        width: 99%;
+        padding-top: 30px;
+        .category{
+        background-color: white;;
+
+            width: 80%;
+            transition: 0.2s linear;
+            margin: auto;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 5px 15px 0px rgb(175, 165, 165);
+            margin-top: 15px;
+            .text{
+                padding: 20px;
+            }
+            &:hover{
+                width: 88%;
+            }
+            .img{
+                img{
+                    display: block;
+                    width: 99%;
+                    max-height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    nav{
+        @include flexStyle();
+        background-color: wheat;
+        padding: 10px 5px 10px 5px;
+        .homediv{
+            width: 30%;
+        }
+        .secondNav{
+            
+            width: 70%;
+            @include flexStyle();
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+
+@import './bigScreen';

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: cursive;
+  background-color: #f0efef;
+}
+
+.container .categories {
+  width: 99%;
+  padding-top: 30px;
+}
+
+.container .categories .category {
+  background-color: white;
+  width: 80%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  margin: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-box-shadow: 0px 5px 15px 0px #afa5a5;
+          box-shadow: 0px 5px 15px 0px #afa5a5;
+  margin-top: 15px;
+}
+
+.container .categories .category .text {
+  padding: 20px;
+}
+
+.container .categories .category:hover {
+  width: 88%;
+}
+
+.container .categories .category .img img {
+  display: block;
+  width: 99%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: wheat;
+  padding: 10px 5px 10px 5px;
+}
+
+.container nav .homediv {
+  width: 30%;
+}
+
+.container nav .secondNav {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container nav a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 85%;
+        grid-template-columns: 100px 85%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .container nav {
+    min-height: 98vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .container nav .homediv {
+    display: block;
+    margin: 2px;
+  }
+  .container nav .secondNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .container nav a {
+    display: block;
+    width: 100%;
+  }
+  .categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 99%;
+  }
+  .categories .category {
+    max-width: 30%;
+    margin: 20px;
+    margin-top: 10px;
+  }
+  .categories .category:hover {
+    max-width: 33%;
+    background-color: #faf7f7;
+  }
+}
+/*# sourceMappingURL=index.css.map */
